@@ -1,0 +1,33 @@
+containe all the relevent intel of the game
+
+ATTention player.h manage alle the struct (need to be changed)
+
+to change the 5 names (save.c (change the nom1/nom2...))
+to change the basic ennemi sponing speed change "baseEnemiSponeSpeed" (main.c)
+to change the points needed per level or the ennemi sponing speed augmentation per Lvl change condition at end of game.c and lvl deffinition in launchGameFromSave(in game.c)
+to change the speed of anything go to update.c and put chorter timer in the fct that you want to accelerate
+to change bullet number in the magazine change int bullettype1/2 in mainc.c and in case g and r in key fct (game.c)
+the shoot fonction is in bullet.c
+
+datasavei[(1)Player name(int),(2)vie,(3)score,(4)currentwepon,(5)bulletwepon1,(6)bulletwepon2]
+increase player move speed : decrease p->speed in createPlayer fonction (player.c)
+
+Choose_map : manage the current map
+0 : accueil
+1 : game map
+2 : load
+3 : score
+4 : settings
+5 : save
+6 : one of the 5 saved map
+10 : choice of name
+
+Map text : input/output of the game on the map.txt files
+0 : green
+1 : black
+2 : white
+3 : ennemi
+4 : player
+5 : central line (mooving one)
+6 : bullet (type1)
+7/8/9 free for now
